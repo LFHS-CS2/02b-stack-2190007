@@ -29,5 +29,17 @@ public class ArrayStackTest
         if (false)
             fail("It should have been true");
     }
-
+    @Test
+    public void testPop() throws Exception{
+        ArrayStack<Integer> sc = new ArrayStack<Integer>();
+        sc.push(10);
+        sc.push(31);
+        try{
+            assertEquals(new Integer(31), sc.pop());
+        }
+        catch(Exception e){
+            System.out.println("Does not work.");
+            System.out.println("Stack Exception");
+        }
+    }
 }
