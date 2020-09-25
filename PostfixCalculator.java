@@ -1,3 +1,9 @@
+/**I
+*This class creates a working postfix claculator.
+*
+*@author Jonathon Snellback
+*/
+
 public class PostfixCalculator extends ArrayStack{
   private ArrayStack<Integer> numbers = new ArrayStack<Integer>();
 public String operators = new String();
